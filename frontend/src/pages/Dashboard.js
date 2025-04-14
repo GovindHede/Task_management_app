@@ -18,7 +18,7 @@ const Dashboard = () => {
   useEffect(() => {
     const fetchTasks = async () => {
       try {
-        const response = await fetch("http://localhost:8000/tasks");
+        const response = await fetch("https://taskmanagementapp-production.up.railway.app/tasks");
         const data = await response.json();
 
         const cleanedTasks = data.map(task => ({
@@ -53,7 +53,7 @@ const Dashboard = () => {
       };
 
       try {
-        const response = await fetch("http://localhost:8000/tasks", {
+        const response = await fetch("https://taskmanagementapp-production.up.railway.app/tasks", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify(newTask),
