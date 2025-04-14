@@ -10,9 +10,13 @@ app = FastAPI()
 
 TASKS_FILE = "tasks.json"
 
+# ✅ Update CORS: Allow both localhost and your Vercel frontend
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"],
+    allow_origins=[
+        "http://localhost:3000",
+        "https://taskmanagement-app.vercel.app"  # 🔁 Replace with your actual Vercel frontend URL
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
