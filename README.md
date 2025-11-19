@@ -4,5 +4,5 @@
 is build on react.js 
 
 ### Backend 
- is builded on the python/Django  based 
+ is builded on the python  based 
  
