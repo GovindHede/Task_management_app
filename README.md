@@ -1,4 +1,4 @@
 # Task Managenet app 
 
-ReaCT AND PYTHON
+REACT AND PYTHON
  
